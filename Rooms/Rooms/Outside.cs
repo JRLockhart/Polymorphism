@@ -8,5 +8,7 @@ namespace Rooms
 {
     class Outside
     {
+
+        private bool hot;
     }
 }

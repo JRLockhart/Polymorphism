@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Rooms
 {
-    class Room
+    interface IHasExteriorDoor
     {
 
-        private string decoration;
+        string DoorDescription { get; }
+        Location DoorLocation { get; set; }
     }
 }
