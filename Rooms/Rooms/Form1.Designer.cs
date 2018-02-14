@@ -32,6 +32,8 @@
             this.goHere = new System.Windows.Forms.Button();
             this.exits = new System.Windows.Forms.ComboBox();
             this.goThroughTheDoor = new System.Windows.Forms.Button();
+            this.check = new System.Windows.Forms.Button();
+            this.hide = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // description
@@ -71,11 +73,33 @@
             this.goThroughTheDoor.UseVisualStyleBackColor = true;
             this.goThroughTheDoor.Click += new System.EventHandler(this.goThroughTheDoor_Click);
             // 
+            // check
+            // 
+            this.check.Location = new System.Drawing.Point(12, 235);
+            this.check.Name = "check";
+            this.check.Size = new System.Drawing.Size(342, 23);
+            this.check.TabIndex = 4;
+            this.check.Text = "check";
+            this.check.UseVisualStyleBackColor = true;
+            this.check.Click += new System.EventHandler(this.check_Click);
+            // 
+            // hide
+            // 
+            this.hide.Location = new System.Drawing.Point(12, 264);
+            this.hide.Name = "hide";
+            this.hide.Size = new System.Drawing.Size(342, 24);
+            this.hide.TabIndex = 5;
+            this.hide.Text = "Hide!";
+            this.hide.UseVisualStyleBackColor = true;
+            this.hide.Click += new System.EventHandler(this.hide_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(366, 275);
+            this.ClientSize = new System.Drawing.Size(367, 301);
+            this.Controls.Add(this.hide);
+            this.Controls.Add(this.check);
             this.Controls.Add(this.goThroughTheDoor);
             this.Controls.Add(this.exits);
             this.Controls.Add(this.goHere);
@@ -95,6 +119,8 @@
         private System.Windows.Forms.Button goHere;
         private System.Windows.Forms.ComboBox exits;
         private System.Windows.Forms.Button goThroughTheDoor;
+        private System.Windows.Forms.Button check;
+        private System.Windows.Forms.Button hide;
     }
 }
 
